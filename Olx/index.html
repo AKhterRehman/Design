@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"  media="(min-device-width:426px)">
+    <link rel="stylesheet" href="responsive.css" media="(max-device-width:425px)">
+</head>
+
+<body>
+    <!-- ----------header---------- -->
+    <div class="none">
+        <nav>
+            <div class="nav-right">
+                <div class="nav-olx-icon s">
+                    <svg height="20" viewBox="0 0 36.289 20.768" alt="Olx logo" class="_21d60d2f">
+                        <path
+                            d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="nav-olx-icon2"> <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="24"
+                        viewBox="0 0 66 20" alt="OLX Motors" class="_1a6eed8f">
+                        <path
+                            d="M4.9 10a1.33 1.33 0 1 0 0 2.66 1.33 1.33 0 0 0 0-2.67zm0 1.8a.48.48 0 1 1 0-.95.48.48 0 0 1 0 .96zM15.65 10a1.33 1.33 0 1 0 0 2.66 1.33 1.33 0 0 0 0-2.67zm0 1.8a.48.48 0 1 1 0-.95.48.48 0 0 1 0 .96zm-2.03.22H7v.85h6.63v-.85zM24 13.48h1.14V8.72l2.13 4.76h.79l2.12-4.76v4.76h1.14V6.53H30.1l-2.43 5.45-2.44-5.45H24v6.95zM39.54 10a3.46 3.46 0 0 0-3.55-3.55A3.48 3.48 0 0 0 32.44 10a3.48 3.48 0 0 0 3.55 3.56A3.47 3.47 0 0 0 39.54 10zm-5.93 0c0-1.57 1-2.55 2.38-2.55s2.38.98 2.38 2.55c0 1.57-1 2.57-2.38 2.57s-2.38-1-2.38-2.57zm6.69-2.53h1.86v6.02h1.14V7.46h1.85v-.93H40.3v.93zM53.02 10a3.46 3.46 0 0 0-3.55-3.55A3.48 3.48 0 0 0 45.94 10a3.48 3.48 0 0 0 3.55 3.56A3.47 3.47 0 0 0 53.02 10zm-5.93 0c0-1.57 1-2.55 2.38-2.55s2.39.98 2.39 2.55c0 1.57-1 2.57-2.38 2.57s-2.38-1-2.38-2.57zm10.75-1.38c0 .7-.4 1.18-1.3 1.18H55.3V7.46h1.26c.89 0 1.29.45 1.29 1.15zm-3.7-2.08v6.95h1.15V10.7h.87l1.6 2.79h1.36L57.4 10.6A1.98 1.98 0 0 0 59 8.63c0-1.13-.8-2.08-2.45-2.08h-2.4zm11.02 4.98c0-2.54-3.68-1.56-3.68-3.13 0-.67.5-.99 1.17-.97.72.02 1.13.45 1.17.92h1.26c-.1-1.19-1.04-1.89-2.37-1.89-1.42 0-2.4.76-2.4 1.98 0 2.56 3.7 1.47 3.7 3.15 0 .6-.45 1.02-1.25 1.02s-1.2-.46-1.24-1.03H60.3c0 1.23 1.07 2 2.46 2 1.55 0 2.4-1 2.4-2.05z">
+                        </path>
+                        <path
+                            d="M19.09 7.26a1.23 1.23 0 0 0-1.54-.8l-.68.21L15.7 4.2l-.37-.12a17.75 17.75 0 0 0-5.3-.74 13.32 13.32 0 0 0-4.84.76l-.33.13-1.12 2.6-.48-.16a1.23 1.23 0 1 0-.74 2.34l.1.03-.08.14a4.5 4.5 0 0 0-.45 1.67c-.01.27 0 .82.02 1.35l.01 2.96v.03c-.02.26.01.53.08.8a.82.82 0 0 0 .83.54h1.75a.82.82 0 0 0 .82-.55c.07-.26.1-.53.09-.8v-.32c2.04.18 3.35.27 4.64.27 1.29 0 2.55-.09 4.5-.26v.32c-.02.26.01.53.09.8a.82.82 0 0 0 .82.54h1.75a.81.81 0 0 0 .82-.55c.08-.26.1-.53.09-.8V12.24c.05-.54.09-1.1.08-1.42A4.14 4.14 0 0 0 18 9.07l-.08-.16.35-.1a1.23 1.23 0 0 0 .8-1.55zM5.5 4.89h.02a12.48 12.48 0 0 1 4.5-.7c1.7-.02 3.4.21 5.03.7h.03l.96 2.03a19.57 19.57 0 0 1-4.74.46h-.79a31.31 31.31 0 0 1-5.94-.33l.93-2.16zm-.67 10.3a2.41 2.41 0 0 1-.03.48H3a2.4 2.4 0 0 1-.03-.49v-.64c.12.06.25.1.38.1l1.48.14v.4zm12.72-.04v.04a2.39 2.39 0 0 1-.03.48h-1.8a2.41 2.41 0 0 1-.03-.49v-.4l1.39-.12c.17-.02.33-.07.47-.15v.64zM18.03 8l-1.3.41.52 1.06c.22.43.35.9.38 1.37 0 .27-.03.78-.06 1.25h-.01v.15l-.05.78c-.01.32-.21.78-.51.8-3.32.32-4.99.47-6.67.47-1.7 0-3.43-.16-6.9-.47-.21-.02-.35-.36-.4-.66a11.35 11.35 0 0 1-.07-.97v-.1a18.51 18.51 0 0 1-.02-1.2 3.6 3.6 0 0 1 .36-1.3l.57-1.03-1.09-.34a.37.37 0 0 1 .23-.72l1.21.39.01-.03c1.82.32 3.66.45 5.5.39h1.57a19.82 19.82 0 0 0 5.12-.52l1.4-.44a.38.38 0 0 1 .46.24.37.37 0 0 1-.25.47z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="auto" height="24" viewBox="0 0 73 20"
+                        alt="OLX Property" class="_1a6eed8f">
+                        <path
+                            d="M17.42 17.72H2.5V16.7h.4V2.5h8.47v14.21h5.04v-8.7l-4.03-1.35V5.6l5.04 1.68v9.43h.4v1h-.4zM3.92 16.7h6.44V3.51H3.91v13.2zm10.31-2.94v-.81h.82v.81h-.82zm-1.63 0v-.81h.82v.81h-.82zm-4.88 0v-.81h1.63v.81H7.72zm-2.45 0v-.81H6.9v.81H5.27zm8.96-2.44v-.81h.82v.81h-.82zm-1.63 0v-.81h.82v.81h-.82zm-4.88 0v-.81h1.63v.81H7.72zm-2.45 0v-.81H6.9v.81H5.27zm8.96-1.63V8.9h.82v.81h-.82zm-1.63 0V8.9h.82v.81h-.82zm-4.88 0V8.9h1.63v.81H7.72zm-2.45 0V8.9H6.9v.81H5.27zm2.45-2.44v-.82h1.63v.82H7.7zm-2.45 0v-.82H6.9v.82H5.27zm2.45-1.63v-.81h1.63v.8H7.7zm-2.45 0v-.81H6.9v.8H5.27zm19.87 4.1V7.46h1.26c.89 0 1.29.42 1.29 1.14 0 .7-.4 1.14-1.29 1.14h-1.26zm3.72-1.13c0-1.12-.81-2.06-2.46-2.06H24v6.95h1.14v-2.83h1.26c1.81 0 2.46-1.07 2.46-2.06zm4.78.02c0 .69-.4 1.18-1.3 1.18H31.1V7.46h1.26c.89 0 1.29.45 1.29 1.15zm-3.7-2.08v6.95h1.15V10.7h.87l1.6 2.79h1.36L33.2 10.6a1.98 1.98 0 0 0 1.6-1.98c0-1.13-.8-2.08-2.45-2.08h-2.4zM43 10a3.46 3.46 0 0 0-3.55-3.55A3.48 3.48 0 0 0 35.89 10a3.48 3.48 0 0 0 3.55 3.56A3.47 3.47 0 0 0 42.99 10zm-5.93 0c0-1.57 1-2.55 2.38-2.55s2.38.98 2.38 2.55c0 1.57-1 2.57-2.38 2.57s-2.38-1-2.38-2.57zm8.19-.26V7.47h1.26c.89 0 1.29.42 1.29 1.14 0 .7-.4 1.13-1.3 1.13h-1.25zm3.72-1.13c0-1.13-.81-2.07-2.46-2.07h-2.4v6.95h1.14v-2.83h1.26c1.8 0 2.46-1.07 2.46-2.06zm4.92-2.08h-3.84v6.96h3.84v-.94h-2.7v-2.13h2.4V9.5h-2.4V7.46h2.7v-.93zM59 8.6c0 .7-.4 1.19-1.3 1.19h-1.25V7.46h1.26c.89 0 1.29.45 1.29 1.15zm-3.7-2.07v6.95h1.15V10.7h.87l1.6 2.79h1.36l-1.72-2.89a1.98 1.98 0 0 0 1.6-1.98c0-1.13-.8-2.08-2.45-2.08h-2.4zm5.97.93h1.86v6.01h1.14V7.46h1.85v-.93h-4.85v.93zm7.71 3.5v2.51h1.14v-2.52l2.3-4.43h-1.26l-1.6 3.42-1.62-3.41h-1.27l2.31 4.42z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="nav-center">
+                <div class="country">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024">
+                        <path
+                            d="M448 725.33c-152.92 0-277.33-124.41-277.33-277.33S295.08 170.67 448 170.67 725.33 295.08 725.33 448 600.92 725.33 448 725.33zm436.44 98.78v.02L732.52 672.19c48.77-61.78 78.15-139.54 78.15-224.19 0-199.98-162.7-362.67-362.67-362.67S85.33 248.03 85.33 448c0 199.98 162.69 362.67 362.67 362.67 84.63 0 162.41-29.38 224.17-78.15l206.14 206.15h60.36v-60.33l-54.23-54.23z">
+                        </path>
+                    </svg>
+                    <select name="country">
+                        <option value="Turkey">Turkey</option>
+                        <option selected value="Pakistan">Pakistan</option>
+                        <option value="Iran">Iran</option>
+                    </select>
+                    <img src="./img/arrow.jpg" alt="">
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Find Cars,Mobile Phone and more">
+                    <div class="color"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                            viewBox="0 0 1024 1024" class="_4743d0f8">
+                            <path
+                                d="M448 725.33c-152.92 0-277.33-124.41-277.33-277.33S295.08 170.67 448 170.67 725.33 295.08 725.33 448 600.92 725.33 448 725.33zm436.44 98.78v.02L732.52 672.19c48.77-61.78 78.15-139.54 78.15-224.19 0-199.98-162.7-362.67-362.67-362.67S85.33 248.03 85.33 448c0 199.98 162.69 362.67 362.67 362.67 84.63 0 162.41-29.38 224.17-78.15l206.14 206.15h60.36v-60.33l-54.23-54.23z">
+                            </path>
+                        </svg></div>
+                </div>
+                <div class="login-mall">
+                    <p>Login</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1603 768" class="_3V9PS">
+                        <path class="_2bClX _12yOz"
+                            d="M434.442 16.944h718.82c202.72 0 367.057 164.337 367.057 367.058s-164.337 367.057-367.057 367.057h-718.82c-202.721 0-367.058-164.337-367.058-367.058S231.721 16.943 434.442 16.943z"
+                            fill="#fff" />
+                        <path class="_2bClX _YBz-"
+                            d="M427.241 669.489c-80.917 0-158.59-25.926-218.705-73.004l-.016-.014C139.407 542.352 99.766 464.914 99.766 383.997c0-41.07 9.776-80.712 29.081-117.797 25.058-48.139 64.933-89.278 115.333-118.966l-52.379-67.581c-64.73 38.122-115.955 90.98-148.159 152.845C18.8 280.243 6.201 331.224 6.201 383.997c0 104.027 50.962 203.61 139.799 273.175h.016c77.312 60.535 177.193 93.887 281.22 93.887h299.699l25.138-40.783-25.138-40.783H427.237z"
+                            fill="#ffce32" />
+                        <path class="_2bClX _3uYj7"
+                            d="M1318.522 38.596c-45.72-14.369-93.752-21.658-142.762-21.658H427.249c-84.346 0-165.764 21.683-235.441 62.713l3.118 51.726 49.245 15.865c54.16-31.895 117.452-48.739 183.073-48.739h748.511c38.159 0 75.52 5.657 111.029 16.829 44.91 14.111 86.594 37.205 120.526 66.792l66.163-57.68c-43.616-38.01-97.197-67.703-154.957-85.852z"
+                            fill="#23e5db" />
+                        <path class="_2bClX BfroU"
+                            d="M1473.479 124.453l-55.855 9.91-10.307 47.76c61.844 53.929 95.92 125.617 95.92 201.88a251.85 251.85 0 01-11.214 74.363c-38.348 124.311-168.398 211.129-316.262 211.129H726.949l25.121 40.783-25.121 40.783h448.812c190.107 0 357.303-111.638 406.613-271.498a323.69 323.69 0 0014.423-95.559c0-98.044-43.805-190.216-123.317-259.551z"
+                            fill="#3a77ff" />
+                    </svg>
+                    <h3>+ SELL</h3>
+                </div>
+        </nav>
+        <div class="nav-bottom">
+            <div class="nav-bottom-categories">
+                <select>
+                    <option value="Turkey">Turkey</option>
+                    <option selected value="Pakistan">ALL CATOGARIES</option>
+                    <option value="Iran">Iran</option>
+                </select>
+                <img src="./img/arrow.jpg" alt="">
+            </div>
+            <div class="nav-bottom-categories2">
+                <p>Mobile Phones</p>
+                <p>Cars</p>
+                <p>Motorcycles</p>
+                <p>Houses</p>
+                <p>TV-Video-Audio</p>
+                <p>Tablets</p>
+                <p>Land & Plots</p>
+            </div>
+        </div>
+        <!-- __________Body__________ -->
+        <div class="cover-image">
+            <img src="./img/olex image.jpg">
+        </div>
+        <div class="olx-commercial">
+            <img src="./img/olx commercial.jpg">
+        </div>
+        <div class="Fresh">
+            <p>Fresh recommendations</p>
+        </div>
+        <div class="contant">
+            <div class="outer">
+                <div class="inner-contant">
+                    <img src="./img/olx-image1.jpg">
+                    <div class="shadow">
+                        <div class="text-icon">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/heart.png">
+                            </div>
+                        </div>
+                        <h3>13,000</h3>
+                    </div>
+                    <div id="small">
+                        <small>University Road Karachi
+                            . 2 day ago</small>
+                    </div>
+                </div>
+                <div class="inner-contant">
+                    <img src="./img/olx-image1.jpg">
+                    <div class="shadow">
+                        <div class="text-icon">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/heart.png">
+                            </div>
+                        </div>
+                        <h3>13,000</h3>
+                    </div>
+                    <div id="small">
+                        <small>University Road Karachi
+                            . 2 day ago</small>
+                    </div>
+                </div>
+                <div class="inner-contant">
+                    <img src="./img/olx-image1.jpg">
+                    <div class="shadow">
+                        <div class="text-icon">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/heart.png">
+                            </div>
+                        </div>
+                        <h3>13,000</h3>
+                    </div>
+                    <div id="small">
+                        <small>University Road Karachi
+                            . 2 day ago</small>
+                    </div>
+                </div>
+                <div class="inner-contant">
+                    <img src="./img/olx-image1.jpg">
+                    <div class="shadow">
+                        <div class="text-icon">
+                            <div class="text">
+                                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="icon">
+                                <img src="./img/heart.png">
+                            </div>
+                        </div>
+                        <h3>13,000</h3>
+                    </div>
+                    <div id="small">
+                        <small>University Road Karachi
+                            . 2 day ago</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contant">
+        <div class="outer">
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="contant">
+        <div class="outer">
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="contant">
+        <div class="outer">
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="contant">
+        <div class="outer">
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="contant">
+        <div class="outer">
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+            <div class="inner-contant">
+                <img src="./img/olx-image1.jpg">
+                <div class="shadow">
+                    <div class="text-icon">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="icon">
+                            <img src="./img/heart.png">
+                        </div>
+                    </div>
+                    <h3>13,000</h3>
+                </div>
+                <div id="small">
+                    <small>University Road Karachi
+                        . 2 day ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="button">
+        <button>Load more</button>
+    </div>
+    <div class="olx-commercial">
+        <img src="./img/olx commercial.jpg">
+    </div>
+    <div class="bottom">
+        <div class="right-bottom"><img src="./img/olxmob.webp" alt=""></div>
+        <div class="mid-bottom">
+            <h1>TRY THE OLX APP</h1>
+            <p>Buy, sell and find just about anything using the app on your mobile.</p>
+        </div>
+        <div class="left-bottom">
+            <p>GET YOUR APP TODAY</p>
+            <div class="appimages">
+                <img src="./img/apple.svg">
+                <img src="./img/play.svg">
+                <img src="./img/gallery.svg">
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <div class="left-footer1">
+            <table>
+                <tr>
+                    <th>POPULARCATEGORIES</th>
+                    <th>TRANDING SEARCHES</th>
+                    <th>ABOUT US</th>
+                    <th>OLX</th>
+
+                </tr>
+                <tr>
+                    <td>Cars</td>
+                    <td>Bikes</td>
+                    <td>About EMPG</td>
+                    <td>Help</td>
+                </tr>
+                <tr>
+                    <td>Flats for rent</td>
+                    <td>Watches</td>
+                    <td>OLX Blog</td>
+                    <td>Sitemap</td>
+                </tr>
+                <tr>
+                    <td>Mobiles Phones</td>
+                    <td>Books</td>
+                    <td>Contact Us</td>
+                    <td>Term of use</td>
+                </tr>
+                <tr>
+                    <td>Mobiles</td>
+                    <td>Phones</td>
+                    <td>Books</td>
+                    <td>Contact Us</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right-footer1">
+            <h4>FOLLOW US</h4>
+            <div class="right-footer1-icon">
+                <img src="https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg"
+                    alt="">
+                <img src="https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg">
+                <img src="https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg">
+                <img src="https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg">
+            </div>
+            <div class="right-footer1-appimages">
+                <img src="./img/apple.svg">
+                <img src="./img/play.svg">
+                <img src="./img/gallery.svg">
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <p>Free Classifieds in Pakistan . © 2006-2022 OLX</p>
+    </div>
+    </div>
+
+    <!-- ................ risponsicve....................... -->
+    <div class="navr">
+        <div class="navr1">
+            <img src="https://www.olx.com.pk/assets/menuIcon_noinline.967425c3fbd99621a344ec1021024ffb.svg">
+            <svg viewBox="0 0 36.289 20.768" alt="Olx logo" class="_21d60d2f">
+                <path
+                    d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z">
+                </path>
+            </svg>
+            <img src="https://www.olx.com.pk/assets/iconMotorsMobile_noinline.fc06b07807fcec535eb6fe2cda9f1315.svg">
+            <img src="https://www.olx.com.pk/assets/iconPropertyMobile_noinline.fa90f1312b42c42adc411d02132bc6fa.svg">
+        </div>
+        <div class="navr2">
+            <img src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg">
+            <h6>Shanti Nagar,Karachi</h6>
+        </div>
+        <div class="navr3">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+                <path
+                    d="M448 725.33c-152.92 0-277.33-124.41-277.33-277.33S295.08 170.67 448 170.67 725.33 295.08 725.33 448 600.92 725.33 448 725.33zm436.44 98.78v.02L732.52 672.19c48.77-61.78 78.15-139.54 78.15-224.19 0-199.98-162.7-362.67-362.67-362.67S85.33 248.03 85.33 448c0 199.98 162.69 362.67 362.67 362.67 84.63 0 162.41-29.38 224.17-78.15l206.14 206.15h60.36v-60.33l-54.23-54.23z">
+                </path>
+            </svg>
+            <input type="text" placeholder="All ads in Shanti Nagar">
+        </div>
+    </div>
+    <div class="bodyr">
+        <div class="add">
+            <img src="./imgsr/olx commercial.jpg" alt="">
+        </div>
+        <div class="see">
+            <p>Browse Categories</p>
+            <p><strong><ins>See All</ins></strong></p>
+        </div>
+        <div class="icons">
+            <div class="icons-1">
+                <div class="image">
+                    <img src="https://www.olx.com.pk/assets/mobiles_noinline.44a7c2eda1ddc22570789a0ccc594747.svg">
+                </div>
+                <p>MOBILES</p>
+            </div>
+            <div class="icons-1 ">
+                <div class="image d2b982">
+                    <img src="https://www.olx.com.pk/assets/vehicles_noinline.6dc597b67b2291206d31e2a68f8a24af.svg">
+                </div>
+                <p>VEHICLES</p>
+            </div>
+            <div class="icons-1  bik">
+                <div class="image w23e5d8 ">
+                    <img src="https://www.olx.com.pk/assets/bikes_noinline.3fd0a90292fe3789fbb152331b6b98d7.svg">
+                </div>
+                <p>BIKES</p>
+            </div>
+            <div class="icons-1">
+                <div class="image f8dd3c">
+                    <img
+                        src="https://www.olx.com.pk/assets/property-for-rent_noinline.864cf34b8ee4401929a10d17b20e04fe.svg">
+                </div>
+                <p>PROPERTY</p>
+            </div>
+        </div>
+        <p id="fresh">Fresh recommendations</p>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="adds">
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+            <div class="adds-1">
+                <img src="./imgsr/olx-image1.jpg" alt="">
+                <div class="prod-name">
+                    <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                    <img src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt="">
+                </div>
+                <h1>Rs 13,000</h1>
+                <div class="adress">
+                    <p>University Road Karachi</p>
+                    <p>2 days ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
